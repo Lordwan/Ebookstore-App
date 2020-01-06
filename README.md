@@ -1,11 +1,11 @@
 # EBOOKSTORE APP
 This is a bookstore app using the jdbc plugin to create a sql database. Java definitions are then used to manipulate the bookstore as needed.
-Credit given to #htorun for the DBTablePrinter.java program which prints the results in the console
+Credit given to #htorun for the DBTablePrinter.java program which prints the results in the console.
 
 # -Step 1-
 
-Download and install MySQL
-Create a project directory, for example: "c:\myProject"
+Download and install MySQL.
+Create a project directory, for example: "c:\myProject".
 Unzip the downloaded file into the newly created project directory, for example: "c:\myProject\mysql-5.7.{xx}-winx64".
 Start a Command Prompt (as administrator) and enter the following commands:
 ```
@@ -75,7 +75,7 @@ Start a new Command Prompt to run the client-side server, enter the following:
 ```
 # -Step 4-
 
-Create a new database called 'ebookstore'
+Create a new database called 'ebookstore':
 ```
 } mysql> create database if not exists ebookstore;
 
@@ -104,7 +104,7 @@ There are no quotes for int and float values.
 ```
 # -Step 5-
 
-In your chosen java ide, open the ebookstore.java file 
+In your chosen java ide, open the ebookstore.java file.
 In code lines 15-16 change the values of the connection conn to correspond with your newly created database, example:
 ```
 } Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebookstore?useSSL=false", "root",
