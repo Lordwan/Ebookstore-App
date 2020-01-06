@@ -7,7 +7,7 @@ Download and install MySQL
 Create a project directory, for example: "c:\myProject"
 Unzip the downloaded file into the newly created project directory, for example: "c:\myProject\mysql-5.7.{xx}-winx64".
 Start a Command Prompt (as administrator) and enter the following commands:
-'''
+```
 } c:
 
 } cd \myProject\mysql-5.7.21-winx64\bin
@@ -27,11 +27,11 @@ Start a Command Prompt (as administrator) and enter the following commands:
   xxxxxxxx
   
 Remember and write down the password and shut down the terminal
-'''
+```
 # -Step 2-
 
 Start a Command Prompt(as administrator) and enter the following:
-'''
+```
 } c:
 
 } cd \myProject\mysql-5.7.21-winx64\bin
@@ -44,11 +44,11 @@ Start a Command Prompt(as administrator) and enter the following:
  
 } XXXXXX XX:XX:XX [Note] mysqld: ready for connections.
   Version: '5.7.xx' socket: '' port: 3306 MySQL Community Server (GPL)
-'''
+```
 # -Step 3-
 
 Start a new Command Prompt to run the client-side server, enter the following:
-'''
+```
 } cd \myProject\mysql-5.7.21-winx64\bin
 
 } mysql -u root -p
@@ -71,11 +71,11 @@ Start a new Command Prompt to run the client-side server, enter the following:
 
 // When the Client has started, the prompt changes to "mysql>".
 // You can now enter SQL commands.
-'''
+```
 # -Step 4-
 
 Create a new database called 'ebookstore'
-'''
+```
 } mysql> create database if not exists ebookstore;
 
 } Query OK, 1 row affected (0.08 sec)
@@ -100,17 +100,17 @@ There are no quotes for int and float values.
 } mysql> insert into books values (3001, 'A Tale of Two Cities', 'Charles Dickens', 86);
 
 } Query OK, 1 row affected (0.03 sec)
-'''
+```
 # -Step 5-
 
 In your chosen java ide, open the ebookstore.java file 
 In code lines 15-16 change the values of the connection conn to correspond with your newly created database, example:
-'''
+```
 } Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebookstore?useSSL=false", "root",
                 "xxxxxx");
                 
 //where xxxxx is password given at installation
-'''     
+```     
 # -Step 6-
 
 Run the program and enjoy functions like:
