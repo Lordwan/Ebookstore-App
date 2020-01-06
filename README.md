@@ -1,5 +1,6 @@
 # EBOOKSTORE APP
 This is a bookstore app using the jdbc plugin to create a sql database. Java definitions are then used to manipulate the bookstore as needed.
+Credit given to #htorun for the DBTablePrinter.java program which prints the results in the console
 
 # -Step 1-
 
